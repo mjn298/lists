@@ -31,7 +31,6 @@ impl<T> List<T> {
             tail: None,
         }
     }
-
     pub fn push_front(&mut self, elem: T) {
         let new_head = Node::new(elem);
         match self.head.take() {
